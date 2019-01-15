@@ -1,12 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// function sayHello() {
+//   for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//   }
+//   console.log(i);
+// }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// sayHello();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// const x = 1;
+// x = 2;
+
+const person = {
+  name: "Bea",
+  walk() {
+    console.log(this);
+  },
+  talk() {}
+};
+
+// person.talk();
+// person.name = "";
+
+// const targetMember = "name";
+// person[targetMember.value] = "John";
+
+const walk = person.walk.bind(person);
+walk();
+// console.log(walk);
