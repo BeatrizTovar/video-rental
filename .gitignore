@@ -22,5 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#ignore Notes file
+#ignore files
 Notes.md 
+person.js
+teacher.js
