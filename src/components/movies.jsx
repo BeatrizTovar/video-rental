@@ -1,11 +1,11 @@
 import React from 'react';
-import {getMovies } from '../services/fakeMovieService';
+import { getMovies } from '../services/fakeMovieService';
 
 class Movies extends React.Component {
-    state = { 
+    state = {
         movies: getMovies() //temporary
-     }
-    render() { 
+    }
+    render() {
         return (
             <React.Fragment>
                 <table className="table">
@@ -18,18 +18,21 @@ class Movies extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+                        {this.state.movies.map(movie => (
+                            <tr>
+                               <td>{movie.title}</td>
+                               <td>{movie.genre.name}</td>
+                               <td>{movie.numberInStock}</td>
+                               <td>{movie.dailyRentalRate}</td>
+                            </tr>
+                            ))}
+
                     </tbody>
-                    
+
                 </table>
             </React.Fragment>
-         );
+        );
     }
 }
- 
+
 export default Movies;
