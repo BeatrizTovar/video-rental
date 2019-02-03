@@ -26,4 +26,4 @@ yarn-error.log*
 Notes.md 
 person.js
 teacher.js
-components/counter.jsx
+src/components/counter.jsx
