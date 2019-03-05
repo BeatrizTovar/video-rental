@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+//SFC
 
 const Like = props => {
   let classes = "fa fa-heart";

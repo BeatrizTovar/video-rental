@@ -1,13 +1,12 @@
 import React, { Fragment } from "react";
 
-const ListGroup = props => {
-  const {
-    items,
-    textProperty,
-    valueProperty,
-    onItemSelect,
-    selectedItem
-  } = props;
+const ListGroup = ({
+  items,
+  textProperty,
+  valueProperty,
+  onItemSelect,
+  selectedItem
+}) => {
   return (
     <Fragment>
       <ul className="list-group">
