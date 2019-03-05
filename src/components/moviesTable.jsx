@@ -11,6 +11,7 @@ class MoviesTable extends Component {
     { path: "dailyRentalRate", label: "Rate" },
     {
       key: "like",
+      // content is a function that takes a movie and returns a React element
       content: movie => (
         <Like liked={movie.liked} onClick={() => this.props.onLike(movie)} />
       )
@@ -28,7 +29,7 @@ class MoviesTable extends Component {
     }
   ];
   render() {
-    const { movies, onLike, onDelete, onSort, sortColumn } = this.props;
+    const { movies, onSort, sortColumn } = this.props;
 
     return (
       <Fragment>
