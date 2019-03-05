@@ -60,7 +60,7 @@ class Movies extends Component {
     if (count === 0) return <p>There are no movies in the database</p>;
 
     const filtered =
-      selectedGenre && selectedGenre._id
+      selectedGenre && selectedGenre._id //if both are truthys
         ? allMovies.filter(m => m.genre._id === selectedGenre._id)
         : allMovies;
 
