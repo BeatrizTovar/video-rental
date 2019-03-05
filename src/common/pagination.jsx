@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import propTypes from "prop-types";
 import _ from "lodash";
 
+//SFC
+
 const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   const pagesCount = Math.ceil(itemsCount / pageSize);
   if (pagesCount === 1) return null;
