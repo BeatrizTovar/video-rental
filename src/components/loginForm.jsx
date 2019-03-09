@@ -8,9 +8,7 @@ class LoginForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     //call server
-
     // const ussername = document.getElementById('username').value VANILLA JS
-
     console.log("submit");
   };
 
