@@ -52,4 +52,6 @@ class LoginForm extends Component {
   }
 }
 
+//Change style
+
 export default LoginForm;
