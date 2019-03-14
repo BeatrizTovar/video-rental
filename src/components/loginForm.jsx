@@ -38,7 +38,7 @@ class LoginForm extends Component {
             <label htmlFor="password">Password</label>
             <input
               value={account.password}
-              onChage={this.handleChange}
+              onChange={this.handleChange}
               name="password"
               id=""
               type="text"
