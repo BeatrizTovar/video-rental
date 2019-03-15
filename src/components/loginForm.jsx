@@ -3,13 +3,23 @@ import Input from "../common/input";
 
 class LoginForm extends Component {
   state = {
-    account: { username: "", password: "" }
+    account: { username: "", password: "" },
+    errors: {}
+  };
+
+  validate = () => {
+    return { username: "username is required" };
   };
 
   handleSubmit = e => {
     e.preventDefault();
     //call server
     // const ussername = document.getElementById('username').value VANILLA JS
+
+    const errors = this.validate();
+    this.setState({ errors });
+    if (errors) return;
+
     console.log("submit");
   };
 
